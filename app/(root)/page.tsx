@@ -1,4 +1,4 @@
-//import CategoryFilter from '@components/shared/CategoryFilter';
+import CategoryFilter from "@/components/shared/CategoryFilter";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
@@ -30,7 +30,7 @@ export default function Home() {
         <h2 className="h2-bold">Trusted by <br /> Thousands of Events</h2>
         <div className="flex w-full flex-col gap-5 md:flex-row">
           Search
-          CategoryFilte 'r'
+          <CategoryFilter />
         </div>
       </section>
     </>
