@@ -52,6 +52,7 @@ const EventDetails = async ({ params: { id }, searchParams}: SearchParamProps) =
                                 <p>
                                 {formatDateTime(event.startDateTime).dateOnly} - {' '} {formatDateTime(event.startDateTime).timeOnly}
                                 </p>
+                                <br />
                                 <p>
                                 {formatDateTime(event.endDateTime).dateOnly} - {' '} {formatDateTime(event.endDateTime).timeOnly}
                                 </p>
