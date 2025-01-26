@@ -13,12 +13,12 @@ EventMaster is a platform for event management. It allows users to create, manag
 - **Category Management**: Filter events by categories.
 
 ## Project Structure
-- app: Contains the Next.js pages and layouts.
-- components: Shared and UI components.
-- lib: Contains actions, database models, and utility functions.
-- public: Static assets.
-- styles/: Global styles.
-- types: TypeScript types.
+- **app**: Contains the Next.js pages and layouts.
+- **components**: Shared and UI components.
+- **constants**: Header links and default event values.
+- **lib**: Contains actions, database models, and utility functions.
+- **public**: Static assets.
+- **types**: TypeScript types.
 
 ## Prerequisites
 
@@ -37,7 +37,7 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+### Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
