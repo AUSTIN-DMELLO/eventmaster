@@ -12,47 +12,19 @@ EventMaster is a platform for event management. It allows users to create, manag
 - **Profile Management**: Users can view their purchased tickets and events they have organized.
 - **Category Management**: Filter events by categories.
 
-## Getting Started
+**### Project Structure**
+- app: Contains the Next.js pages and layouts.
+- components: Shared and UI components.
+- lib: Contains actions, database models, and utility functions.
+- public: Static assets.
+- styles/: Global styles.
+- types: TypeScript types.
 
 ### Prerequisites
 
 - Node.js
 - npm or yarn
 - MongoDB
-
-### Installation
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/yourusername/eventmaster.git
-cd eventmaster
-
-**### Project Structure**
-app: Contains the Next.js pages and layouts.
-components: Shared and UI components.
-lib: Contains actions, database models, and utility functions.
-public: Static assets.
-styles/: Global styles.
-types: TypeScript types.
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
