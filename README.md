@@ -1,4 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# EventMaster
+
+EventMaster is a platform for event management. It allows users to create, manage, and attend events. Users can explore various events, book tickets, and view event details.
+
+## Features
+
+- **User Authentication**: Secure user authentication using Clerk.
+- **Event Creation**: Users can create and manage their events.
+- **Event Listing**: Browse and search for events by category or title.
+- **Event Details**: View detailed information about events, including date, time, location, and organizer details.
+- **Ticket Booking**: Book tickets for events, with Stripe integration for payment processing.
+- **Profile Management**: Users can view their purchased tickets and events they have organized.
+- **Category Management**: Filter events by categories.
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js
+- npm or yarn
+- MongoDB
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/eventmaster.git
+cd eventmaster
+
+**### Project Structure**
+app: Contains the Next.js pages and layouts.
+components: Shared and UI components.
+lib: Contains actions, database models, and utility functions.
+public: Static assets.
+styles/: Global styles.
+types: TypeScript types.
 
 ## Getting Started
 
