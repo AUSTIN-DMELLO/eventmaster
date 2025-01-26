@@ -12,7 +12,7 @@ EventMaster is a platform for event management. It allows users to create, manag
 - **Profile Management**: Users can view their purchased tickets and events they have organized.
 - **Category Management**: Filter events by categories.
 
-**### Project Structure**
+## Project Structure
 - app: Contains the Next.js pages and layouts.
 - components: Shared and UI components.
 - lib: Contains actions, database models, and utility functions.
@@ -20,7 +20,7 @@ EventMaster is a platform for event management. It allows users to create, manag
 - styles/: Global styles.
 - types: TypeScript types.
 
-### Prerequisites
+## Prerequisites
 
 - Node.js
 - npm or yarn
@@ -28,7 +28,7 @@ EventMaster is a platform for event management. It allows users to create, manag
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+### Learn More
 
 To learn more about Next.js, take a look at the following resources:
 
