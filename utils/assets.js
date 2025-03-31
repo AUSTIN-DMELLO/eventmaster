@@ -1,0 +1,16 @@
+export const assets = {
+    user_icon: "/assets/icons/user_icon.png",
+    gemini_icon: "/assets/icons/gemini_icon.png",
+    compass_icon: "/assets/icons/compass.png",
+    bulb_icon: "/assets/icons/bulb.png",
+    message_icon: "/assets/icons/message.png",
+    code_icon: "/assets/icons/code.png",
+    gallery_icon: "/assets/icons/gallery.png",
+    mic_icon: "/assets/icons/mic.png",
+    send_icon: "/assets/icons/send.png",
+    gemini_logo: "/assets/icons/gemini_logo.svg",
+    history_icon: "/assets/icons/history.png",
+    menu_icon: "/assets/icons/menu.png",
+    new_chat_icon: "/assets/icons/new_chat.png",
+    setting_icon: "/assets/icons/setting.png",
+};

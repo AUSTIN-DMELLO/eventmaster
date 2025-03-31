@@ -1,36 +1,64 @@
-import { Document, model, models, Schema } from "mongoose";
+import { Schema, model, models, Document } from 'mongoose';
 
 export interface IEvent extends Document {
-    _id: string;
-    title: string;
-    description?: string;
-    location?: string;
-    createdAt: Date;
-    imageUrl: string;
-    startDateTime: Date;
-    endDateTime: Date;
-    price: string;
-    isFree: boolean;
-    url?: string;
-    category: { _id: string, name: string }
-    organizer: { _id: string, firstName: string, lastName: string }
+  title: string;
+  description: string;
+  startDateTime: Date;
+  endDateTime: Date;
+  location: string;
+  imageUrl: string;
+  organizer: Schema.Types.ObjectId;
+  category: Schema.Types.ObjectId;
+  price: number;
+  isFree: boolean;
+  averageRating: number;
 }
 
 const EventSchema = new Schema({
-    title: { type: String, required: true},
-    description: { type: String, },
-    location: { type: String, },
-    createdAt: { type: Date, default: Date.now },
-    imageUrl: { type: String, required: true},
-    startDateTime: { type: Date, default: Date.now},
-    endDateTime: { type: Date, default: Date.now},
-    price: { type: String},
-    isFree: { type: Boolean, deafult: false},
-    url: { type: String },
-    category: { type: Schema.Types.ObjectId, ref: 'Category'},
-    organizer: { type: Schema.Types.ObjectId, ref: 'User'},
-})
+  title: {
+    type: String,
+    required: true,
+  },
+  description: {
+    type: String,
+    required: true,
+  },
+  startDateTime: {
+    type: Date,
+    required: true,
+  },
+  endDateTime: {
+    type: Date,
+    required: true,
+  },
+  location: {
+    type: String,
+    required: true,
+  },
+  imageUrl: {
+    type: String,
+    required: true,
+  },
+  organizer: {
+    type: Schema.Types.ObjectId,
+    ref: 'User',
+    required: true,
+  },
+  category: {
+    type: Schema.Types.ObjectId,
+    ref: 'Category',
+    required: true,
+  },
+  price: {
+    type: Number,
+    required: true,
+  },
+  isFree: {
+    type: Boolean,
+    required: true,
+  },
+});
 
-const Event = models.Event || model('Event', EventSchema);
+const Event = models.Event || model<IEvent>('Event', EventSchema);
 
 export default Event;

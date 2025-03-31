@@ -11,6 +11,10 @@ export const headerLinks = [
       label: 'My Profile',
       route: '/profile',
     },
+    {
+      label: 'Chatbot',
+      route: '/chatbot',
+    },
   ]
   
   export const eventDefaultValues = {

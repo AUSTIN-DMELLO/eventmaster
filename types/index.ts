@@ -103,6 +103,14 @@ export type CreateUserParams = {
     categoryName: string
   }
   
+  // ====== COMMENT PARAMS
+  export type CreateCommentParams = {
+    eventId: string;
+    userId: string;
+    comment: string;
+    rating: number;
+  };
+
   // ====== ORDER PARAMS
   export type CheckoutOrderParams = {
     eventTitle: string
@@ -111,7 +119,7 @@ export type CreateUserParams = {
     isFree: boolean
     buyerId: string
   }
-  
+
   export type CreateOrderParams = {
     stripeId: string
     eventId: string
