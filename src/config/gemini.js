@@ -9,7 +9,7 @@ import {
 import mime from "mime-types";
 import { Buffer } from "buffer"; // Use the browser-compatible Buffer
 
-const apiKey = "AIzaSyCZ4QRUXiF12RrdHIti-fuUWqEWk-Yiba4";
+const apiKey = "AIzaSyAdAkvU1kwA8H5IXjohmv3cNvdhc0KWa4w";
 
 const genAI = new GoogleGenerativeAI(apiKey);
 
