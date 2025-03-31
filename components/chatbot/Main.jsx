@@ -1,6 +1,4 @@
-"use client";
-
-import React, { useContext, useRef, useEffect } from 'react';
+import React, { useContext, useRef, useEffect } from 'react'
 import './Main.css';
 import { Context } from '../../context/Context';
 import Image from 'next/image';
