@@ -23,8 +23,8 @@ const Checkout = ({ event, userId }: { event: IEvent, userId: string }) => {
   const onCheckout = async () => {
     const order = {
       eventTitle: event.title,
-      eventId: event._id,
-      price: event.price,
+      eventId: event._id as string,
+      price: event.price.toString(),
       isFree: event.isFree,
       buyerId: userId
     }
