@@ -37,8 +37,10 @@ type EventFormProps = {
 const EventForm = ({ userId, type, event, eventId }: EventFormProps ) => {
   const [files, setFiles] = useState<File[]>([])
   const initialValues = event && type === "Update" ? 
-  { ...event, startDateTime: new Date(event.startDateTime),
-    endDateTime: new Date(event.endDateTime)
+  { ...event, 
+    startDateTime: new Date(event.startDateTime),
+    endDateTime: new Date(event.endDateTime),
+    price: String(event.price)
   }
    : eventDefaultValues;
   const router = useRouter();
