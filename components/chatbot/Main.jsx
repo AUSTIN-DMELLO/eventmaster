@@ -42,7 +42,7 @@ const Main = () => {
                             </div>
                             <div className="card" onClick={() => onSent("What events are happening within the next few weeks?")}>
                                 <p>What events are happening within the next few weeks?</p>
-                                <Image src='/assets/icons/question_icon.png' alt="Code" width={24} height={24} />
+                                <Image src='/assets/icons/bulb_icon.png' alt="Code" width={24} height={24} />
                             </div>
                         </div>
                     </>
